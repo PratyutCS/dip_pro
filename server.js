@@ -31,7 +31,8 @@ let app = new Express()
 app.use(bodyparser.urlencoded({extended: true}));
 app.use(Express.json());
 app.use(Express.static(__dirname + '/public/css'));
-app.use(Express.static(__dirname + '/public/assets'));
+app.use(Express.static(__dirname + '/public/img'));
+app.use(Express.static(__dirname + '/public/js'));
 app.use(Express.static(__dirname + '/project_assets'));
 
 app.set('view engine','ejs');

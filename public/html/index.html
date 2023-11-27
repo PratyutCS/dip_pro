@@ -1,50 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <title>Portfolio</title>
 </head>
 <body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Invisible Image Watermark</a>
+            </div>
 
-  <header>
-    <h1>Image Copyright System</h1>
-  </header>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Details</a></li>
+                </ul>
+            </div>
 
-  <section class="watermark-section">
-    <div class="watermark-text">
-      <h2>Invisible Watermark</h2>
-      <p>An invisible watermark is a digital marker that is embedded in an image or document. It is imperceptible to the human eye but can be detected and read by computer programs. The purpose of an invisible watermark is to identify and protect the copyright of the content.</p>
-      <div>
-        <a href="/upload">
-          <button>Try Tool</button>
-        </a>
-      </div>
-      
-    </div>
-    <img class="watermark-image" src="/image1.jpg" alt="Watermark Image">
-</section>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
 
+    <main class="l-main">
+        <section class="home bd-grid" id="home">
+            <div class="home__data">
+                <h1 class="home__title">Hi,<br>We are <span class="home__title-color">Group 10</span><br>DIP</h1>
 
-  <section>
-    <div class="exercise-images" style="background-image: url('/image2.jpg'); top: 100px;"></div>
-    <div class="exercise-images" style="background-image: url('/image3.jpg'); top: 200px;"></div>
-    <div class="exercise-images" style="background-image: url('/image4.jpg'); top: 300px;"></div>
-    <div class="exercise-images" style="background-image: url('/image5.jpg'); top: 400px;"></div>
-    <div class="exercise-images" style="background-image: url('/image6.jpg'); top: 500px;"></div>
-    <div class="exercise-images" style="background-image: url('/image7.jpg'); top: 600px;"></div>
-    <div class="exercise-images" style="background-image: url('/image8.jpg'); top: 700px;"></div>
-    <div class="exercise-images" style="background-image: url('/image9.jpg'); top: 800px;"></div>
-    <div class="exercise-images" style="background-image: url('/image10.jpg'); top: 900px;"></div>
-  </section>
+                <a href="/upload" class="button">Try Now</a>
+            </div>
 
-  
+            <div class="home__social">
+                <a href="https://github.com/PratyutCS/dip_pro" target="_blank" class="home__social-icon"><i class='bx bxl-github'></i></a>
+            </div>
 
-  
+            <div class="home__img">
+                <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <mask id="mask0" mask-type="alpha">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                    </mask>
+                    <g mask="url(#mask0)">
+                        <path
+                            d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z" />
+                        <image class="home__blob-img" x="0" y="100" href="/profile.svg" />
+                    </g>
+                </svg>
+            </div>
+        </section>
 
+        <section class="about section " id="about">
+            <h2 class="section-title">About</h2>
+
+            <div class="about__container bd-grid">
+                <div class="about__img">
+                    <img src="/1.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2 class="about__subtitle">Invisible Image Watermark Embedding</h2>
+                    <p class="about__text">
+                    <ul>
+                        <li class ="abstract">Welcome to our journey into the realm of invisible image watermarking! In this exploration, Group 10 will delve into the intricacies of embedding imperceptible watermarks using the Discrete Cosine Transform (DCT). Our focus lies on seamlessly integrating watermarks into the least significant bit (LSB) of DCT coefficients through a linear modulation algorithm. Join us as we navigate the balance between robustness and imperceptibility, exploring potential hardware implementations for enhanced speed and efficiency. Our mission is to contribute to the evolution of digital content protection in the age of widespread internet dissemination. Let's embark on this exciting venture together.<a class= "link" href="https://docs.google.com/document/d/1BzbbWI4mXlqRUnvgG0vfCOYD_Rv-eHSCuzrzlID7tok/edit?usp=sharing" target ="_blank">Continue Reading...</a></li>
+                        
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact section" id="contact">
+            <h2 class="section-title">Details</h2>
+        
+            <div class="contact__container bd-grid">
+            <div class="group10">
+                <h1>Ankur Kaushal</h1>
+                <h1>Abdul Ahad</h1>
+                <h1>Himanshu Sharma</h1>
+                <h1>Pratyut</h1>
+            </div>
+
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__title">Group 10</p>
+        <div class="footer__social">
+           
+            <a href="https://github.com/PratyutCS/dip_pro"    target="_blank"  class="github"><i class='bx bxl-github'></i></a>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/main.js"></script>
 </body>
-<footer>
-    &copy; 2023 Watermarking by <u>group 10</u> All rights reserved.
-  </footer>
+
 </html>

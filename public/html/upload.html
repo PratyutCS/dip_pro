@@ -1,32 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Watermark Embedding</title>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/page2.css">
 </head>
 <body>
+    <header class="l-header">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#" class="nav__logo">Image Copyright System</a>
+            </div>
 
-  <!-- Page 2: Tool Try Now -->
-  <header>
-    <h1>Invisible Watermark</h1>
-  </header>
 
-  <section class="tool-page">
-    <div>
-        <h2>Image Copyright System</h2>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
+        </nav>
+    </header>
+ 
+  <section class="home bd-grid1" id="home">
+    <div class="imagecent">
+        <h2>Invisible Image Watermark</h2>
         <p>Upload an image to apply the copyright system. Click the button below to get started.</p>
         
         <form method="post" action="/upload" enctype="multipart/form-data">
             <input class="upload" type="file" name="file" maxlength="5000000" accept=".jpeg, .jpg, .png" required>
             <br>
-            <button class="submitbtn" type="submit">Upload</button>
+            <button type="submit" class="button1">Upload</button>
         </form>
+    <main class="l-main"></main>
     </div>
   </section>
+  </main>
 
 </body>
 <footer>
-    &copy; 2023 Watermarking by <u>group 10</u> All rights reserved.
+    &copy; 2023 Watermarking by Group 10 All rights reserved.
   </footer>
+</body>
 </html>

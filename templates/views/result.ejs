@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Image Details</h1>
+  </header>
+  <section>
+    <%for(let i=0,j=0;data.includes(" ");){%>
+      <%j = data.indexOf(" ")%>
+      <h3><%=data.slice(i,j)%></h3>
+      <%i=j%>
+      <% data = data.replace(" ","")%>
+    <%}%>
+    <div class="image-container">
+      <div>
+        <h2>Original Image</h2>
+        <img src="<%=oi%>" alt="Original Image">
+      </div>
+  
+      <div>
+        <h2>Watermarked Image</h2>
+        <img src="<%=wi%>" alt="Watermarked Image"> 
+      </div>
+  
+      <div>
+        <h2>Watermark</h2>
+        <img src="<%=w%>" alt="Watermark">
+      </div>
+  
+      <div>
+        <h2>Extracted Watermark</h2>
+        <img src="<%=ew%>" alt="Extracted Watermark">
+      </div>
+    </div>
+
+    <form method="post" action="/delete">
+      <input style ="display:none" type="text" name="oi" value="<%=oi%>">
+      <input style ="display:none" type="text" name="wi" value="<%=wi%>">
+      <input style ="display:none" type="text" name="ew" value="<%=ew%>">
+      <button class="submitbtn" type="submit">Close</button>
+    </form>
+  </section>
+
+</body>
+<footer>
+    &copy; 2023 Watermarking by <u>group 10</u> All rights reserved.
+  </footer>
+</html>

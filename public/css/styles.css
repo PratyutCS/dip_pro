@@ -1,0 +1,205 @@
+ 
+
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+header {
+        background-color: #333;
+     color: white;
+        padding: 10px;
+        text-align: center;
+      }
+  
+      section {
+        position: relative;
+        padding: 100px;  
+        overflow: hidden;
+      }
+  
+      .try-tool-btn {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
+        background-color: #333;
+        color: white;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+      }
+  
+      .exercise-images {
+        position: absolute;
+        width: 200px; 
+        height: 200px;  
+        border-radius: 10px;
+        background-color: transparent; 
+        background-size: cover;
+        animation: moveRight 10s linear infinite alternate;  
+      }
+  
+      @keyframes moveRight {
+        0% {
+          left: -70px; 
+          top: 0;
+        }
+        100% {
+          left: calc(50% + 200px);  
+          top: 0;
+        }
+      }
+  
+      .exercise-images:nth-child(2) {
+        animation-delay: 2s; 
+      }
+  
+      .exercise-images:nth-child(3) {
+        animation-delay: 4s; 
+      }
+  
+      .exercise-images:nth-child(4) {
+        animation-delay: 6s; 
+        top: 300px;
+      }
+  
+      .exercise-images:nth-child(5) {
+        animation-delay: 8s;
+        top: 400px;
+      }
+  
+      .exercise-images:nth-child(6) {
+        animation-delay: 10s;
+        top: 500px;
+      }
+  
+      .exercise-images:nth-child(7) {
+        animation-delay: 12s;
+        top: 600px;
+      }
+  
+      .exercise-images:nth-child(8) {
+        animation-delay: 14s;
+        top: 700px;
+      }
+  
+      .exercise-images:nth-child(9) {
+        animation-delay: 16s;
+        top: 800px;
+      }
+  
+      .exercise-images:nth-child(10) {
+        animation-delay: 18s;
+        top: 900px;
+      }
+  
+      .watermark-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px;
+        background-color: #f2f2f2;
+      }
+  
+      .watermark-text {
+        width: 40%;
+        font-size: 18px;
+        color: #333;
+      }
+  
+      .watermark-image {
+        width: 40%;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .watermark-image {
+    border: 2px solid #ddd;  
+    border-radius: 3px;       
+    padding: 2px;            
+    width: 300px;             
+  }
+  
+  button {
+        padding: 10px 20px;   
+        font-size: 16px;
+        background-color: #333;   
+        color: white;   
+        border-radius: 5px;   
+        cursor: pointer;  / 
+      }
+  
+     
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+
+
+
+/* Page 2 and 3 sStyles */
+.tool-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  #upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  #upload-btn {
+    border: 2px solid gray;
+    color: gray;
+    background-color: white;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  #upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+  }
+  
+  /* Page 3 Styles */
+  .image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+  }
+  
+  .image-container div {
+    text-align: center;
+    width: 25%;
+  }
+  
+  .image-container img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

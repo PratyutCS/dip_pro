@@ -257,7 +257,6 @@ img {
   
 }
 
-/*BUTTONS*/
 .button {
   background-color: var(--first-color);
   color: #fff;
@@ -405,6 +404,7 @@ img {
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
+  
 }
 
 .footer__title {
@@ -547,6 +547,20 @@ img {
 .home__social{
   display:flex;
   
+}
+
+
+.submitbtn{
+  padding-bottom: 20px;
+  background-color: var(--first-color);
+    color: #fff;
+    margin-top: auto;
+    padding: .5rem 1.5rem;
+    font-weight: var(--font-semi);
+    border-radius: .5rem;
+    transition: .3s;
+    border: none;
+    margin-top: 1rem;
 }
 
 @media screen and (min-width: 992px) {

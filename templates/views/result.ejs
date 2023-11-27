@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/styles.css">
-  <link rel="icon" type="image/x-icon" href="/favicon.png">
+  <link rel="stylesheet" href="/third.css">
 </head>
 <body>
   <header>
@@ -27,28 +27,29 @@
         <h2>Watermarked Image</h2>
         <img src="<%=wi%>" alt="Watermarked Image"> 
       </div>
-  
-      <div>
+    </div>
+
+    <div class="image-container">
+      <div class="hue-hue">
         <h2>Watermark</h2>
         <img src="<%=w%>" alt="Watermark">
       </div>
   
-      <div>
+      <div class="hue-hue">
         <h2>Extracted Watermark</h2>
         <img src="<%=ew%>" alt="Extracted Watermark">
       </div>
     </div>
 
     <form method="post" action="/delete">
-      <input style ="display:none" type="text" name="oi" value="<%=oi%>">
-      <input style ="display:none" type="text" name="wi" value="<%=wi%>">
-      <input style ="display:none" type="text" name="ew" value="<%=ew%>">
+      <input style="display:none" type="text" name="oi" value="<%=oi%>">
+      <input style="display:none" type="text" name="wi" value="<%=wi%>">
+      <input style="display:none" type="text" name="ew" value="<%=ew%>">
       <button class="submitbtn" type="submit">Close</button>
     </form>
   </section>
-
 </body>
 <footer>
-    &copy; 2023 Watermarking by <u>group 10</u> All rights reserved.
-  </footer>
+  &copy; 2023 Watermarking by Group 10 All rights reserved.
+</footer>
 </html>

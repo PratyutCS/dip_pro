@@ -51,7 +51,7 @@ app.get("/upload", (req, res) => {
 app.post('/upload', upload.single('file'), (req, res) => {
   const file = req.file;
   try {
-    const pythonProcess = spawn('python', ['./script.py', "./"+file.path, "./project_assets/wi/"+file.filename, "./project_assets/w/w.jpg", "./project_assets/ew/ew"+file.filename]);
+    const pythonProcess = spawn('python3', ['./script.py', "./"+file.path, "./project_assets/wi/"+file.filename, "./project_assets/w/w.jpg", "./project_assets/ew/ew"+file.filename]);
     let dat;
     pythonProcess.stdout.on('data', (data) => {
         dat = `${data}`;
